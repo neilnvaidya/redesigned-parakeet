@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://baudrpkntwgy"]
+
+[ext_resource type="Script" path="res://cat.gd" id="1_01e24"]
+[ext_resource type="Texture2D" uid="uid://fypu4f7r05ox" path="res://Pixel Art Top Down - Basic/Texture/TX Player.png" id="2_jrq7g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bc0nn"]
+
+[node name="Cat" type="CharacterBody2D" groups=["Cat"]]
+script = ExtResource("1_01e24")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bc0nn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_jrq7g")
+region_enabled = true
+region_rect = Rect2(5.54097, 13.41, 21.9222, 45.2496)
